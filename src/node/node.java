@@ -26,10 +26,10 @@ public class node {
     public void fillLinks(){
         node[] nodes = generateNodes();
         //System.out.println(nodes[0].number);
-        //links.add(new link(number, nodes[0].number));
+        links.add(new link(number, nodes[0].number));
         connectedNums.add(nodes[0].number);
         if(nodes[1]!=null){
-            //links.add(new link(number, nodes[1].number));
+            links.add(new link(number, nodes[1].number));
             connectedNums.add(nodes[1].number);
         }
     }

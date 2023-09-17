@@ -17,7 +17,7 @@ public class generation {
             connectedInts = oldGeneration.nodes.get(x).getConnectedNums();
             for (Integer connectedInt : connectedInts) {
                 if (!existingInts.contains(connectedInt)) {
-                    System.out.println(connectedInt);
+                    //System.out.println(connectedInt);
                     existingInts.add(connectedInt);
                     size++;
                     nodes.add(new node(oldGeneration.nodes.get(x).getGeneration() + 1, connectedInt));
